@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="https://c.s-microsoft.com/favicon.ico?v2" />
     <link rel="manifest" href="/manifest.json">
     <title>Temperature converter</title>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js', { scope: '/' });
+        }
+    </script>
 </head>
 
 <body>
